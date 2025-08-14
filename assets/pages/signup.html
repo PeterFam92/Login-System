@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="login, register, system, javascript, session_storage, local_storage, json" />
+    <meta name="author" content="Mohamed Emary" />
+    <meta name="description" content="Login System" />
+    <link rel="icon" href="../images/enter.png" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Sign Up</title>
+  </head>
+  <body class="bg-dark">
+    <nav class="shadow-lg text-center px-3 p-2">
+      <h1 class="text-white fs-2 my-2">Smart Login System</h1>
+    </nav>
+
+    <main
+      class="vh-100 d-flex justify-content-center align-items-center flex-column">
+      <form class="p-3 shadow-lg text-center col-md-6 col-sm-12">
+        <h2 class="text-white fs-3 mb-3 fw-bold">Register</h2>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Mohamed Ahmed" />
+          <label for="name">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="name@example.com" />
+          <label for="email">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="pass"
+            placeholder="Password" />
+          <label for="pass">Password</label>
+        </div>
+        <div
+          id="warningDiv"
+          class="text-start bg-danger p-3 rounded-2 mt-3 mb-0 text-white d-none">
+          <p class="text-center fs-5 m-0 fw-bold">Please Enter Valid Data</p>
+          Example: <br />
+          <ol>
+            <li>
+              Name: Uppercase letter followed by lower case letters or spaces
+              (ex: <b>Mohamed Ahmed</b>)
+            </li>
+            <li>Email: Valid email (ex: <b>example@gmail.com</b>)</li>
+            <li>
+              Password: Minimum eight characters, at least one upper case
+              English letter, one lower case English letter, one number and one
+              special character (ex: <b>gr3at@3wdsG</b>)
+            </li>
+          </ol>
+        </div>
+
+        <div
+          id="successfulDiv"
+          class="text-start bg-success p-3 rounded-2 mt-3 mb-0 text-white d-none">
+          <p class="text-center fs-5 m-0 fw-bold">Successful Registration</p>
+        </div>
+
+        <div id="signupBtn" class="btn btn-outline-light text-white my-3 w-100">
+          Sign Up
+        </div>
+        <p class="text-white">
+          You have an account?
+          <a class="text-dark-emphasis" href="../../index.html">Sign In</a>
+        </p>
+      </form>
+    </main>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/signup.js"></script>
+  </body>
+</html>
